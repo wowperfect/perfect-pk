@@ -1,0 +1,124 @@
+/* body {
+  background: #EDEFF2;
+} */
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 750px;
+  padding: .5em;
+  margin: 0 auto;
+}
+
+.App > * {
+  margin: 0;
+}
+
+.dark-theme {
+  --background-color: #222;
+  --line-color: #dadada;
+
+  background-color: var(--background-color);
+  color: var(--line-color);
+  min-height: 100vh;
+}
+
+.light-theme {
+  --background-color: white;
+  --line-color: black;
+  min-height: 100vh;
+}
+
+.avatar {
+  object-fit: cover;
+  object-position: 50% 50%;
+  min-width: 3rem;
+  min-height: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  border-radius: 3rem;
+  border: 1px solid black;
+}
+
+.avatar.small {
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--line-color);
+}
+
+input[type="text"] {
+  background-color: rgba(250, 251, 252, .1);
+  border: 1px solid grey;
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  padding: 3px 10px;
+  font-size: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button, input[type="submit"] {
+  appearance: none;
+  background-color: rgba(250, 251, 252);
+  border: 1px solid grey;
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 10px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  word-wrap: break-word;
+  font-size: inherit;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+button:disabled, input[type="submit"]:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+button:active, input[type="submit"]:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+button:focus, input[type="submit"]:focus {
+  outline: 1px transparent;
+}
+
+button:before, input[type="submit"]:before {
+  display: none;
+}
+
+button:-webkit-details-marker, input[type="submit"]:-webkit-details-marker {
+  display: none;
+}
+
+.dark-theme button,
+.dark-theme input[type="submit"]
+.dark-theme input[type="text"] {
+  background-color: rgba(250, 251, 252, .05);
+  border-color: var(--line-color);
+}

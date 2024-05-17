@@ -1,0 +1,16 @@
+export default {
+  avatar_url: null,
+  banner: null,
+  color: null,
+  created: "2022-04-05T18:07:09.470276Z",
+  description: null,
+  description_privacy: "public",
+  front_history_privacy: "public",
+  front_privacy: "public",
+  group_list_privacy: "public",
+  id: "jqhbg",
+  member_list_privacy: "public",
+  name: null,
+  tag: "🌷🐇🌷",
+  tz: "UTC",
+}

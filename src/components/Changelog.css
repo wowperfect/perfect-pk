@@ -1,0 +1,11 @@
+.changelog * {
+  text-align: left;
+}
+
+.changelog h4 {
+  margin-bottom: .2em;
+}
+
+.changelog ul {
+  margin-top: .5em;
+}

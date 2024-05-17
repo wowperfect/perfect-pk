@@ -1,0 +1,16 @@
+.tutorial {
+  margin: 0 auto;
+}
+
+.tutorial img {
+  width: 100%;
+}
+
+.tutorial h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.end-spacer {
+  margin-bottom: 15rem;
+}

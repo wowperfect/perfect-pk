@@ -1,0 +1,141 @@
+
+.calendar-wrapper {
+  margin-top: 2em;
+  width: 100%;
+  overflow-y: scroll;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  position: relative;
+  height: 70vh;
+}
+
+.calendar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-wrapper {
+  scrollbar-width: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.controls::-webkit-scrollbar {
+  display: none;
+}
+.controls {
+  scrollbar-width: none;
+}
+
+.calendar {
+  position: relative;
+  width: 10em;
+  margin: 0 auto;
+  top: 0;
+}
+
+.calendar .slots {
+  margin-top: 1em;
+}
+
+.calendar .slot {
+  height: var(--calendar-scale);
+  position: relative;
+}
+
+.calendar .slot .bar {
+  border-top: 1px dashed var(--line-color);
+  border-spacing: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.calendar .slot .time {
+  text-align: right;
+  position: absolute;
+  left: -5em;
+  top: -.7em;
+  height: 2em;
+}
+
+.calendar .switches {
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.calendar .switch-group {
+  position: relative;
+}
+
+.switch-group .now {
+  /* border-top: 1px solid black; */
+  height: 1px;
+  background-color: var(--line-color);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.switch-group .now::before {
+  content: 'now';
+  position: absolute;
+  top: -.7em;
+  right: -2.2em;
+}
+
+.switch-group .switch {
+  height: 3px;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.switch-group .handle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 1em solid grey;
+  position: absolute;
+  right: -11px;
+  top:-8.5px;
+}
+
+.switch-group.edited .switch {
+  background-color: red;
+}
+
+.switch-group.edited .handle {
+  border-right-color: red;
+}
+
+.switch-group .avatars {
+  width: 0;
+  height: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: -.5em;
+  right: -1.5em;
+  top: -1em;
+}
+
+.switch-group .time {
+  position: absolute;
+  width: 9rem;
+  left: .5rem;
+  top: -1.2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}

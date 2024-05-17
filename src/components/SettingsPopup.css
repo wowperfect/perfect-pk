@@ -1,0 +1,62 @@
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 80%;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+
+  padding: 2em 1em;
+  border: 1px solid grey;
+  border-radius: .2rem;
+  position: relative;
+}
+
+.popup-content .close {
+  cursor: pointer;
+  display: block;
+  font-size: 24px;
+  padding: .5rem 0;
+  width: 3rem;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: -1rem;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .popup-content {
+    width: 50%;
+  }
+}
+
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+ul.reorderable {
+  line-height: 1.5em;
+}
+
+/* ul.reorderable > li {
+  margin: .25em inherit;
+} */

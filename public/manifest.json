@@ -1,0 +1,21 @@
+{
+  "short_name": "perfect pk",
+  "name": "perfect pk",
+  "description": "web app for logging pluralkit switches! quickly switch between fronters using a nice interface, edit past switches with a drag and drop timeline, enter friends system id's to see who's currently fronting",
+  "icons": [
+    {
+      "src": "shape192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "shape512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

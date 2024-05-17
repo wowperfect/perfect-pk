@@ -1,0 +1,124 @@
+.next-switch {
+  display: grid;
+
+  grid-template-areas:
+    'loading current-switch settings'
+    'arrow next-switch confirm-reset';
+
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 1em;
+  padding: 1em;
+}
+
+.next-switch .arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-switch .member-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.next-switch .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.next-switch .buttons button {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.members {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.member-card {
+  display: inline-flex;
+  flex-basis: content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid grey;
+  border-radius: .2rem;
+  padding: .2rem;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 5rem;
+}
+
+.member-card.selected {
+  border-color: rgb(41, 146, 162);
+  background-color: rgb(41, 146, 162, .1);
+}
+
+.member-card .check {
+  position: absolute;
+  z-index: 10;
+  font-size: 3em;
+}
+
+.member-card.small {
+  flex-basis: 3rem;
+  border: none;
+  padding: 0;
+}
+
+.member-card > div {
+  max-width: 100%;
+}
+
+.member-card .name {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  overflow-x: scroll;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filters {
+  scrollbar-width: none;
+}
+
+button.selected {
+  border-color: rgb(41, 146, 162);
+  background-color: rgba(41, 146, 162, 0.3);
+}
+
+.filters.exclude button {
+  border-color: rgb(205, 61, 61);
+}
+
+.filters.exclude .selected {
+  background-color: rgba(205, 61, 61, .3);
+}

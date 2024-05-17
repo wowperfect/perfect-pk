@@ -1,0 +1,40 @@
+.switches-view {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.switches-view .switch {
+  padding: 3px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto 3em;
+}
+
+.switches-view .switch .avatars {
+  position: relative;
+  height: 2rem;
+}
+
+.switches-view .switch .time, .switches-view .switch .delete {
+  justify-self: flex-end;
+}
+
+/* .switches-view .switch .names {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.switches-view .switch .names, .switches-view .switch .avatars {
+  justify-self: flex-start;
+  text-align: left;
+}
+
+.switches-view .switch .names, .switches-view .switch .time {
+  display: flex;
+  align-items: center;
+}
+
+.switches-view .switch.selected {
+  background-color: rgba(41, 146, 162, .1);;
+}
