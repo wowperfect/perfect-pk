@@ -6,7 +6,7 @@ export default function Intro() {
   return <>
     <div style={{marginTop: '2em'}}/>
     <div style={{margin: '0 auto'}}>
-      <img style={{width: '7em'}} src='/pk/shape512.png'/>
+      <img style={{width: '7em'}} src='/pk/myriad_pk512.png'/>
     </div>
     <h1>perfect pk</h1>
     <p>

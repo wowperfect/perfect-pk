@@ -4,12 +4,12 @@
   "description": "web app for logging pluralkit switches! quickly switch between fronters using a nice interface, edit past switches with a drag and drop timeline, enter friends system id's to see who's currently fronting",
   "icons": [
     {
-      "src": "shape192.png",
+      "src": "myriad_pk192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "shape512.png",
+      "src": "myriad_pk512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
